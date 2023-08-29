@@ -46,7 +46,3 @@ buttonsContent.forEach(button =>{
             }
         })
     });
-
-function isOperator(value){
-    return ['+','-','*','/'].includes(value)
-}
