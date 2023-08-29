@@ -1,1 +1,4 @@
-# calculator
+# A calculator writen with javascript as the main Language. 
+# Which is handling the logic and evaluations. 
+
+<img src="img/image.png" alt="image for the calculator">
