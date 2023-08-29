@@ -6,21 +6,32 @@ const buttonsContent = document.querySelectorAll('.buttons button');
 
 buttonsContent.forEach(button =>{
     button.addEventListener('click',()=>{
-        //error handling 
-        if(button.textContent === '*' && userInput === ''){
-            alert('Math erorr, start with an operand');
-           return; //exit the EventListener
-        }
         //classList
         button.classList.add("AllBtn");
 
+        //error handling 
+        switch(button.textContent){
+            case '*':
+                if(button.textContent === '*' && userInput === ''){
+                    alert('Math erorr, start with an operand');
+                   return; //exit the EventListener
+                }
+                break;
+            case '/':
+                if(button.textContent === '/' && userInput === ''){
+                    alert('Math erorr, start with an operand');
+                   return; //exit the EventListener
+                }
+                break;   
+        };
+        
         /*Grab the button TextContent 
         and output it in input field*/
         display.value = button.textContent;
         switch(button.textContent){
             case '=':
                 if(userInput === ''){
-                    alert('No input to calculate')
+                    alert('No input to Calculate')
                     return; //exit the EventListener
                 }
                 display.value = userInput;                
