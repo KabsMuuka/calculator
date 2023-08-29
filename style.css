@@ -12,6 +12,9 @@ input{
     background-color: lightgray;
     padding: 100px;
 }
+.AllBtn{
+    cursor: pointer;
+}
 .row{
     margin: 5%;
 }

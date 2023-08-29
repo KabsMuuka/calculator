@@ -6,30 +6,47 @@ const buttonsContent = document.querySelectorAll('.buttons button');
 
 buttonsContent.forEach(button =>{
     button.addEventListener('click',()=>{
-       //Grab the button TextContent and output it in input field
-       display.value = button.textContent;
+        //error handling 
+        if(button.textContent === '*' && userInput === ''){
+            alert('Math erorr, start with an operand');
+           return; //exit the EventListener
+        }
+        //classList
+        button.classList.add("AllBtn");
+
+        /*Grab the button TextContent 
+        and output it in input field*/
+        display.value = button.textContent;
         switch(button.textContent){
             case '=':
-                display.value = userInput;
-                //evalution of operands and operators
+                if(userInput === ''){
+                    alert('No input to calculate')
+                    return; //exit the EventListener
+                }
+                display.value = userInput;                
+                //evalution
                 const result = eval(userInput);
                 display.value = result;
 
-                //clear the users inputs
+                //clear inputs
                 userInput = '';
             break;
 
             case 'C':
-                //clear text field if user === C
+                //clear text field 
                 display.value = '';
                 break;
 
             default:
+                //append in userInput
                 userInput += button.textContent;
-               // display.value = userInput;
+                display.value = userInput;
             break;
 
-        }
-    })
-});
+            }
+        })
+    });
 
+function isOperator(value){
+    return ['+','-','*','/'].includes(value)
+}
