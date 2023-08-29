@@ -5,7 +5,7 @@
 #Error handling features included
 <img src="img/image2.png" alt="image for the calculator">
 
-<img src="img/image1.png" alt="image for the calculator">
+<img src="img/image3.png" alt="image for the calculator">
 
 
 
