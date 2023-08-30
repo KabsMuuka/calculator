@@ -4,6 +4,9 @@ body{
 button{
     font-size: x-large;
 }
+.red{
+    background-color: tomato;
+}
 input{
     width: 200px;
     height: 25px;
