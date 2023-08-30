@@ -1,19 +1,25 @@
 body{
     background-color: darkgray;
 }
+button{
+    font-size: x-large;
+}
 input{
     width: 200px;
     height: 25px;
     border-color: dodgerblue;
+    font-size: large;
 }
 .buttons{
     display: grid;
     justify-content: center;
     background-color: lightgray;
     padding: 100px;
+   
 }
 .AllBtn{
     cursor: pointer;
+    
 }
 .row{
     margin: 5%;
