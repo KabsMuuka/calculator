@@ -13,32 +13,29 @@ buttonsContent.forEach(button =>{
         switch(button.textContent){
             case '*':
                 if(button.textContent === '*' && userInput === ''){
-                    alert('Math erorr, start with an operand');
+                    alert('invali input');
                    return; //exit the EventListener
                 }
                 break;
             case '/':
                 if(button.textContent === '/' && userInput === ''){
-                    alert('Math erorr, start with an operand');
+                    alert('invalid input');
                    return; //exit the EventListener
                 }
                 break;   
         };
-        
         /*Grab the button TextContent 
         and output it in input field*/
         display.value = button.textContent;
         switch(button.textContent){
             case '=':
                 if(userInput === ''){
-                    alert('No input to Calculate')
                     return; //exit the EventListener
                 }
                 display.value = userInput;                
                 //evalution
                 const result = eval(userInput);
                 display.value = result;
-
                 //clear inputs
                 userInput = '';
             break;
@@ -46,6 +43,7 @@ buttonsContent.forEach(button =>{
             case 'C':
                 //clear text field 
                 display.value = '';
+                userInput = '';
                 break;
 
             default:
