@@ -1,6 +1,6 @@
 
 
-A calculator writen with javascript as the main Language.Which is handling the logic and evaluations. 
+A calculator writen in javascript as the main Language.Which is handling the logic and evaluations. 
 
 <img src="img/image1.png" alt="image for the calculator">
 
