@@ -20,13 +20,15 @@ buttonsContent.forEach(button =>{
             case '/':
                 if(button.textContent === '/' && userInput === ''){
                     alert('invalid input');
+
                    return; //exit the EventListener
                 }
-                break;   
+            break;   
         };
         /*Grab the button TextContent 
         and output it in input field*/
         display.value = button.textContent;
+        console.log(display.value)
         switch(button.textContent){
             case '=':
                 if(userInput === ''){
@@ -34,10 +36,11 @@ buttonsContent.forEach(button =>{
                 }
                 display.value = userInput;                
                 //evalution
-                const result = eval(userInput);
-                display.value = result;
-                //clear inputs
-                userInput = '';
+                const results = eval(userInput);
+
+                userInput = results;
+                                
+                display.value = results;
             break;
 
             case 'C':
@@ -50,8 +53,6 @@ buttonsContent.forEach(button =>{
                 //append in userInput
                 userInput += button.textContent;
                 display.value = userInput;
-            break;
-
             }
         })
     });

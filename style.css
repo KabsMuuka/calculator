@@ -6,7 +6,7 @@ button{
 }
 .red{
     background-color: rgba(212, 32, 0, 0.658);
-    margin-left: 5px;
+    margin-left: 20px;
    
 }
 input{
@@ -26,7 +26,6 @@ input{
     margin: 10%  auto;
     width: 60%;
     border-radius: 2%;
-    
 }
 .AllBtn{
     cursor: pointer;
@@ -36,8 +35,9 @@ input{
     margin: 6%;
 }
 .zero{
-    margin-left: 10px;
     margin-right: 5px;
     
 }
-
+.equal{
+    margin-left: 5%;
+}
