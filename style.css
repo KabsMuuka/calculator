@@ -3,6 +3,7 @@ body{
 }
 button{
     font-size: x-large;
+    margin: 1%;
 }
 .red{
     background-color: rgba(212, 32, 0, 0.658);
@@ -24,7 +25,7 @@ input{
     justify-content: center;
     background-color: lightslategray;
     margin: 10%  auto;
-    width: 60%;
+    width: 45%;
     border-radius: 2%;
 }
 .AllBtn{
